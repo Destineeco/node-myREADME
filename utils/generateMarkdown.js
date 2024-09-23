@@ -67,3 +67,47 @@ export function renderLicenseBadge(license) {
     
   # ${data.title}
 
+const licenseBadge = renderLicenseBadge(data.license);
+  
+    return `
+    
+  # ${data.title}
+  
+  ## Table of Contents
+  
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Test](#test)
+  - [Questions](#questions)
+  
+  
+  ## Description
+  ${data.description}
+  
+  ## Installation
+  ${data.installation}
+  
+  ## Usage
+  ${data.usage}
+  
+  ## License
+  ${licenseBadge}
+  
+  ## Contributing
+  ${data.contributing}
+  
+  ## Tests
+  ${data.tests}
+  
+  ## Questions
+  
+  If you have any questions, feel free to reach out to me at [${data.gituser} and ${data.email}].`
+  };
+  
+  
+  
+  
+  export default generateMarkdown;
