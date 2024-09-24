@@ -60,14 +60,8 @@ export function renderLicenseBadge(license) {
   }
 
   // ??TODO: Create a function to generate markdown for README
-  function generateMarkdown(data) {}
-  const licenseBadge = renderLicenseBadge(data.license);
-  
-    return `
-    
-  # ${data.title}
-
-const licenseBadge = renderLicenseBadge(data.license);
+  function generateMarkdown(data) {
+    const licenseBadge = renderLicenseBadge(data.license);
   
     return `
     
@@ -106,6 +100,7 @@ const licenseBadge = renderLicenseBadge(data.license);
   
   If you have any questions, feel free to reach out to me at [${data.gituser} and ${data.email}].`
   };
+  
   
   
   
